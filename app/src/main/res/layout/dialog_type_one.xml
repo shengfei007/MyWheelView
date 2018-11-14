@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/tv_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="请选择类型"
+            android:textColor="#FF222222"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="确定"
+            android:textColor="#FF007AFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+
+    <com.example.mywheelview.wheelview.WheelView
+        android:id="@+id/wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
